@@ -11,7 +11,7 @@ mongoose.set('useUnifiedTopology',true);
 mongoose.set('useCreateIndex', true);
 
 require('./model/User');
-mongoose.connect('mongodb://msaifee:saiMoh95@ds047514.mlab.com:47514/exercisetrack');
+mongoose.connect('mongodb://userid:passwd@ds047514.mlab.com:47514/exercisetrack');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');

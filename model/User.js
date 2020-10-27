@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var connection = mongoose.createConnection('mongodb://msaifee:saiMoh95@ds047514.mlab.com:47514/exercisetrack');
+var connection = mongoose.createConnection('mongodb://userid:passwd@ds047514.mlab.com:47514/exercisetrack');
 
 
 var exerciseSchema = new mongoose.Schema({

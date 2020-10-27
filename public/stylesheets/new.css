@@ -1,0 +1,98 @@
+body {
+
+	background-image: url('../images/mountain.jpg');
+  	font: 'monaco';
+  	color: white;
+}
+
+a {
+  	color: white;
+  	/*font-size: 35px;*/
+}
+
+.navbar{
+
+	background:black;
+	font-size: 17px;
+}
+
+li > a{
+	color: white;
+}
+
+h1{
+
+	margin: auto;
+	position: relative;
+	top:40%;
+	text-align: center;
+	font-size: 35px;
+	color:black;
+}
+
+h2{
+	margin: auto;
+	text-align: center;
+	color: black;
+}
+
+.sign{
+
+	position: relative;
+	top: 50%;
+	margin: auto;
+	width: 750px;
+	height: auto;
+	background:transparent;
+	padding: 10px;
+	transform: translateY(+20%);
+	color:black;
+	border-radius: 10px;
+	border: solid black ;
+
+}
+
+.btn{
+
+	background-color: black;
+	width: 238px;
+	color: white;
+}
+
+.con{
+
+	position: relative;
+	top: 50%;
+	margin: auto;
+	transform: translateY(+40%);
+	color: black;
+}
+
+p{
+	text-align: center;
+	color: black;
+	font-size: 25px;
+}
+
+.graph{
+	margin:auto;
+	width: 450px;
+	height: 450px;  
+	color: black;
+	background-color: white;
+}
+
+.add{
+
+	text-align:center;
+	color: black;
+
+}
+
+input{
+	width: 350px;
+	height: 40px;
+	background: transparent;
+	font-size: 25px;
+	border: solid black;
+}

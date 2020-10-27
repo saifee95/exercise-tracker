@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>New User</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel='stylesheet' href='/stylesheets/signin.css'/>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  </head>
+  <body class="text-center">
+      
+    <form class="form-signin" method="post" action="/api/exercise/new-user">
+      <% if(errors) { %>
+    <% for(var i=0; i < errors.length; i++) { %>
+      <div class="alert alert-danger"><%= errors[i].msg %></div>
+    <% } %>
+  <% } %>
+  <h1 class="h3 mb-3 font-weight-normal">Please fill your details</h1>
+  <label for="name" class="sr-only">Username</label>
+  <input type="text" name="userid" id="userid" class="form-control" placeholder="Username" autofocus>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+</form>
+
+<form class="form-signin" method="post" action="/api/exercise/add">
+      <% if(form_errors) { %>
+    <% for(var i=0; i < form_errors.length; i++) { %>
+      <div class="alert alert-danger"><%= form_errors[i].msg %></div>
+    <% } %>
+  <% } %>
+  <h1 class="h3 mb-3 font-weight-normal">Please fill your details</h1>
+  <label for="name" class="sr-only">UserId</label>
+  <input type="text" name="userid" id="userid" class="form-control" placeholder="UserId" autofocus>
+  <label for="name" class="sr-only">Description</label>
+  <input type="text" name="description" id="description" class="form-control" placeholder="Description" autofocus>
+    <label for="name" class="sr-only">Duration(mins)</label>
+  <input type="text" name="duration" id="duration" class="form-control" placeholder="Duration" autofocus>
+    <label for="name" class="sr-only">Date</label>
+  <input type="text" name="date" id="date" class="form-control" placeholder="Date" autofocus>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+</form>
+
+</body>
+</html>
